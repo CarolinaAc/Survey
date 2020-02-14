@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<h1 id="title"> Survey </h1>
+<p id="description"> <b>Do you want to go travelling?</b></p>
+<form id="survey-form">
+</br>
+  <div class="labels">
+    <label id="name-label">* Name: </label>
+    <input type="text" name="name" id="name" class="input-field" required placeholder="Enter your name"  >
+    <label id="number-label">* Age: </label>
+    <input type="number" name="number" id="number" class="input-field" min="1" max="140" placeholder="Enter a number">
+    <label id="email-label">* Email: </label>
+    <input type="email" name="email" class="input-field" id="email" required placeholder="Enter your email" >
+<br>
+<br>
+    <ul style="list-style: none;"> I want to travel... <i> (Select the option that applies to you) </i> <br>
+      <li class="radio"> <input name="radio-buttons" value="1" type="radio"><label>Today </label> </li>
+      <li class="radio"> <input name="radio-buttons" value="2" type="radio"><label> This week </label></li>
+      <li class="radio"> <input name="radio-buttons" value="3" type="radio"><label> Next month </label></li>
+      <li class="radio"> <input name="radio-buttons" value="4" type="radio"><label> Next year </label></li>
+      <li class="radio"> <input name="radio-buttons" value="5" type="radio"><label> I don't want to travel </label></li>
+    </ul>
+    <label id="CartoonFormat"> What do you prefer? </label>
+    <select id="dropdown" name="CartoonFormat" class="dropdown">
+      <option disabled value> Select an option </option>
+      <option value="Series"> Travel through time </option>
+      <option value="Movies"> Travel through space </option>
+      <option value="Both"> Both </option>
+      <option value="None"> None </option>
+    </select>
+<br>
+    <div class="tab-right">
+    <ul style="list-style: none;">  Why do you want to travel? <i> (Select the options that applies to you) </i>
+      
+      <li class="checkbox"> <input name="checkbox" value="1" type="checkbox"><label> To see new places </label> </li>
+      <li class="checkbox"> <input name="checkbox" value="2" type="checkbox"><label> To visit different history events </label></li>
+      <li class="checkbox"> <input name="checkbox" value="3" type="checkbox"><label> To meet people </label></li>
+      <li class="checkbox"> <input name="checkbox" value="4" type="checkbox"><label> To go on adventures </label></li>
+      <li class="checkbox"> <input name="checkbox" value="5" type="checkbox"><label> Other </label></li>
+      </div>
+    </ul>
+    <p> Which others?</p>
+    <textarea id="comments"> </textarea> <br>
+    <button id="submit"> Submit </button>
+  </div> 
+</form>
